@@ -7,9 +7,10 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   Protocol
-      Mask
-      Stap
-      Letter
+   
+   protocol
+      mask
+      stamp
+      letter
    usage
    api
