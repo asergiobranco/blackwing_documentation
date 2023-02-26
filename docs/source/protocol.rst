@@ -14,10 +14,10 @@ The first byte of a Blackwing message is the setup for everything that comes nex
   
    The mask is what defines the server behaviour. Therefore, pay attention to what you are setting. Most errors occur due to a bit mistake. 
 
-... _SecureMode:
+.. _SecureMode:
 
 Secure Mode
-----------
+~~~~~~~~
 
 Hello
   
