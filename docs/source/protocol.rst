@@ -10,13 +10,13 @@ Mask
 
 The first byte of a Blackwing message is the setup for everything that comes next. This byte is called the mask and provides the server with information regarding what to expect and how to behave. 
 
-The first bit (LSB) in the mask defines if the message is sent in secure (if 1) or not secure (if 0) mode.
+The first bit (LSB) in the mask defines if the message is sent in ``secure (if 1)`` or ``not secure (if 0) mode.
 
 .. note::
   
    The mask is what defines the server's behaviour. Therefore, pay attention to what you are setting. Most errors occur due to a bit mistake. 
    
-.. drawio-figure:: docs/source/example.drawio
+.. drawio-figure:: source/example.drawio
    :format: png
 
 
@@ -45,7 +45,13 @@ The not secure mode does not means that the message sent is not encrypted or tha
 Stamp
 ------------
 
-The Stamp provides the server with information regarding the microservice to foward the message, and the AES keys to use. 
+The Stamp provides the server with information regarding the microservice to foward the message, and the AES keys to use. The Stamp is composed of 5 fields, one of them being optional, but should be considered to **avoid stamp reutilization**. 
+
+# Microservice ID (64 bits)
+# AES Key (16 bytes)
+# AES IV (16 bytes)
+# Stamp Request (1 Byte)
+# Timestamp (optional)
 
 .. note::
 
