@@ -26,6 +26,16 @@ Hello
 Stamp
 ------------
 
+The Stamp provides the server with information regarding the microservice to foward the message, and the AES keys to use. 
+
+.. note::
+
+  The Stamp's size depends on the RSA key size chosen. For a 1024-bit, the minimum acceptable, the Stamp's size is 128 bytes. The size doubles as the key doubles in size.
+
+.. note::
+
+  The stamp must be msgpack serialized.
+  
 .. _Letter:
 
 Letter
