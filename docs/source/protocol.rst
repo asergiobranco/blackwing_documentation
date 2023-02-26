@@ -14,7 +14,7 @@ The first byte of a Blackwing message is the setup for everything that comes nex
   
    The mask is what defines the server behaviour. Therefore, pay attention to what you are setting. Most errors occur due to a bit mistake. 
    
-.. drawio-figure:: example.drawio
+.. drawio-figure:: docs/source/example.drawio
    :format: png
 
 
