@@ -41,6 +41,10 @@ The not secure mode does not means that the message sent is not encrypted or tha
 * Use previous stored session.
 * To simply send a message to the microservice without any encryption (optional).
 
+.. image:: mask_unsecure.png
+   :width: 800
+   :alt: Mask Representation
+
 
   
 .. _Stamp:
@@ -61,6 +65,10 @@ The fields in secure mode are:
 
 
 It exists a special Stamp for mask's ``not secure`` mode. This is when the client tells the server that there it is using a previous stored session. In this case, the Stamp is 8 bytes which represent the Session ID. For this case scenario, the AES Keys and IV to use are the previous ones. The server will send the message to the Microservice to whom the client connected before. 
+
+.. image:: stamp.png
+   :width: 800
+   :alt: Mask Representation
 
 
 
