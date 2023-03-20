@@ -13,3 +13,27 @@ The session ID and Time of Death must be encrypted with the AES Key, IV, and Mod
 
  
 
+.. warning::
+   Do not restart the AES context when you send the Microservice's response.
+   
+
+
+Client's Message with Session
+---------------------------------
+
+For the next interactions between the client and server, the client should send the following:
+
+.. image:: client_w_session.png
+   :width: 800
+   :alt: Mask Representation
+   
+As one can see, the mask has its first bit at 0 to tell the server that the upcoming message is "unsecured". The second bit is 1, which tells the server to fetch a previously stored session. The following 8 bytes are the session ID sent by the server. These 8 bytes are unencrypted so that the server can read them. The letter follows the 8 bytes and is encrypted using the AES Key, IV, and Mode. 
+
+
+The server and client should start a new AES context to encrypt ad decrypt the new message at each new connection, avoiding errors. 
+
+Sessions reduce the protocol's overhead to 9 bytes and should be used whenever possible. 
+
+.. note::
+   Next protocol versions will provide a solution to use the same session for multiple microservices.
+   
