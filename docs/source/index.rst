@@ -28,6 +28,7 @@ Contents
       mask
       stamp
       letter
+   stamp
    session
    usage
    api
