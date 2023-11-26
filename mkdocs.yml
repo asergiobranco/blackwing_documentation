@@ -14,11 +14,6 @@ markdown_extensions:
       base_path: .
   - admonition
   - mermaid2
-  - pymdownx.superfences:
-    custom_fences:
-          - name: mermaid
-            class: mermaid
-            format: !!python/name:mermaid2.fence_mermaid_custom
 nav:
   - Home: index.md
   - Mask: mask.md
