@@ -12,3 +12,6 @@ By checking for upcomming traffic at this port, any malicious player can know th
 
 ![alt text](figs/mesage.svg)
 
+## Sesion Wire Protocol
+
+![alt text](figs/session_wire.svg)

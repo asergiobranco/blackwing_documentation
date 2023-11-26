@@ -36,6 +36,6 @@ Besides the name, the unsecure mask is not unsecure, it simply serves other purp
 
 The second bit signals the use of sessions. If the second bit is set to `1`, the server knows that the user intends to use a previous stored session, and the 8 bytes that follow the mask will be the `Session ID`. In this case, the server will use the stored AES Key, AES IV, and AES mode used in the connection that set the session. Note that, in this case, the AES context is always reset. 
 
-The third bit is used to request for the public key. In this case, the server should implement a method to provide the user with the public key. We let the developers to choose the method they want to do such thing.
+The third bit is used to request for the public key. In this case, the server should implement a method to provide the user with the public key. We let the developers to choose the method they want to do such thing. Note that the server must accept that the user sends a session, to ensure that one can encrypt the upcomming data with it. This way, a more secure way to transmit data can exist. 
 
 ![alt text](figs/unsecure_mask.svg)

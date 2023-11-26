@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-11-26T17:26:30.768Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="bEtY1jCq-e4jddWJZtEX" version="22.1.2" type="device" pages="12">
+<mxfile host="Electron" modified="2023-11-26T22:02:05.987Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.1.2 Chrome/114.0.5735.289 Electron/25.9.4 Safari/537.36" etag="_DN-Ctm1Pft3N4RW9IbY" version="22.1.2" type="device" pages="13">
   <diagram name="Page-1" id="xYel8Bs00dxGxHJGH5vS">
     <mxGraphModel dx="748" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1078,6 +1078,89 @@
         </mxCell>
         <mxCell id="Ox0gRYhVVehAAB6Tsieo-24" value="MSB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="730" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ljYE0zkDlyslACRk-i6v" name="Page-13">
+    <mxGraphModel dx="1212" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-2" target="5R8-ulTUg4W_3xYiDF3K-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-2" target="5R8-ulTUg4W_3xYiDF3K-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-2" value="Mask&lt;br&gt;(1 byte)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-5" target="5R8-ulTUg4W_3xYiDF3K-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-5" target="5R8-ulTUg4W_3xYiDF3K-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-5" value="Session ID&lt;br&gt;(8 Bytes)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="440" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-7" target="5R8-ulTUg4W_3xYiDF3K-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-7" value="Letter&lt;br&gt;(Variable size)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="440" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-8" value="RSA Encrypted" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="530" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-9" value="AES Encrypted" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-11" target="5R8-ulTUg4W_3xYiDF3K-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-11" value="No Encryption" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="530" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-12" value="&lt;h1&gt;Mask&lt;/h1&gt;&lt;div&gt;A single byte that tells the server what to expect. It is present in any message.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;No encryption.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The LSB should be set to 0 and the second bit to 1&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="224" y="610" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-13" value="&lt;h1&gt;Session ID&lt;/h1&gt;&lt;div&gt;An 8 byte ID sent by the server when requested in a previous default message.&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="180" width="190" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-14" value="&lt;h1&gt;Letter&lt;/h1&gt;&lt;div&gt;Defined by the microservice. The server does not care about the format, or serialization.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Encrypted with AES Key and IV sent previous sent in another connection.&amp;nbsp;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="610" width="190" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.468;entryY=-0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="5R8-ulTUg4W_3xYiDF3K-9" target="5R8-ulTUg4W_3xYiDF3K-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-16" value="0" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="210" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-17" value="1" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="240" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-18" value="x" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="270" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-19" value="x" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="300" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-20" value="x" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="330" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-21" value="x" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="360" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-22" value="x" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="390" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-23" value="x" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="420" y="350" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5R8-ulTUg4W_3xYiDF3K-25" value="LSB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="310" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
