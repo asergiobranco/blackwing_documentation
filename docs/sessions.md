@@ -5,3 +5,7 @@ Blackwing sessions are the way to avoid the overhead imposed by the protocol. Wh
 The first 8 bytes are the `Session ID` that should be send in the upcomming messages. The next 8 bytes are the timestamp, representing the Time to Live of such session, therefore the time when the session will expire. 
 
 ![alt text](figs/session_response.svg)
+
+To request a session, the `smask` should have its LSB set to `1`. As soon as this bit is set to `1` the upcomming 16 bytes of the response are a session. Please, ensure that this bit is `0` if you do not want to receive a session, otherwise you may get the "wrong" response from the microservice.
+
+![alt text](figs/request_session.svg)
