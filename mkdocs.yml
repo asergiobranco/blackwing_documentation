@@ -10,10 +10,12 @@ plugins:
           options:
             docstring_style: sphinx
 markdown_extensions:
-  - mermaid2
   - markdown_include.include:
       base_path: .
   - admonition
+plugins:
+  - drawio_file
+  - mermaid2
 nav:
   - Home: index.md
   - Mask: mask.md
