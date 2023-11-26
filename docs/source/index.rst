@@ -1,4 +1,4 @@
-Blackwing Protocol
+Blackwing Protoco
 ==================
 
 Blackwing protocol's design and implementation started five years ago. The main idea was to design a secure protocol that worked as a method to create distributed networks and systems that worked across multiple machines and programs, called microservices.  
