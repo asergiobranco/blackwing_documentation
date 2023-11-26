@@ -23,4 +23,8 @@ nav:
   - Home: index.md
   - Mask: mask.md
   - Stamp: stamp.md
+  - Letter: letter.md
+  - Sessions: stamp.md
+  - Server: server.md
+  - Microservice: microservice.md
   - About: about.md
