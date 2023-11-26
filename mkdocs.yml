@@ -13,6 +13,13 @@ markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
+  - mermaid2
+  - drawio_file
+  - pymdownx.superfences:
+    custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:mermaid2.fence_mermaid_custom
 nav:
   - Home: index.md
   - Mask: mask.md
