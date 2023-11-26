@@ -14,7 +14,9 @@ markdown_extensions:
       base_path: .
   - admonition
   - toc:
-      baselevel: 1
+      permalink: "#"
+      baselevel: 2
+      separator: "_"
 plugins:
   - mermaid2
 nav:

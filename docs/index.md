@@ -8,4 +8,7 @@ By checking for upcomming traffic at this port, any malicious player can know th
 
 ![alt text](figs/bwarch.svg)
 
-![alt text](figs/message.svg)
+## Default Wire Protocol
+
+![alt text](figs/mesage.svg)
+
