@@ -7,3 +7,5 @@ Moreover, no one in the network can precisely know which service a device is cal
 By checking for upcomming traffic at this port, any malicious player can know that you are connecting to a MongoDB database. However, under a Blackwing network, no one can precisely know that you are connecting to a MongoDB. 
 
 ![alt text](figs/bwarch.svg)
+
+![alt text](figs/message.svg)

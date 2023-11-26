@@ -2,11 +2,11 @@ The Mask is the first byte in any **Blackwing** message. This byte tells the ser
 The LSB indicates whether the server should expect a traditional **Blackwing** message, containing a stamp and a letter, or another
 type of message, for example, one starting with a session.
 
-# Secure Mask
+## Secure Mask
 
 ![alt text](figs/secure_mask.png)
 
-## Asymetric algorithm choosing
+### Asymetric algorithm choosing
 
 The second bit indicates the Asymetric algorithm used to encrypt the Stamp. 
 There are currently only two algorithms supported by the protocol, the `RSAES-OAEP`, where it uses the OAEP padding scheme. This method is the safest and should be prefered. 
@@ -18,16 +18,16 @@ If you intend to use the `RSAES-OAEP` algorithm please ensure the second bit is 
 
 ![alt text](figs/secure_mask_rsa.svg)
 
-## Symetric algorithm choosing
+### Symetric algorithm choosing
 
 The third bit indicates the AES algorithm chosen. Currently there are two modes available, the `CFB` and the `CBC`.  
 
 ![alt text](figs/secure_mask_aes.svg)
 
-## SHA algorithm choosing
+### SHA algorithm choosing
 
 ![alt text](figs/secure_mask_sha.svg)
 
-# Unsecure Mask
+## Unsecure Mask
 
 ![alt text](figs/unsecure_mask.svg)
