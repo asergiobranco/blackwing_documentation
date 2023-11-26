@@ -4,7 +4,11 @@ The Mask is
 
 ![alt text](figs/secure_mask.png)
 
+### Asymetric algorithm choosing
+
 ![alt text](figs/secure_mask_rsa.svg)
+
+### Symetric algorithm choosing
 
 ![alt text](figs/secure_mask_aes.svg)
 

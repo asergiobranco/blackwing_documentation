@@ -13,6 +13,8 @@ markdown_extensions:
   - markdown_include.include:
       base_path: .
   - admonition
+  - toc:
+      baselevel: 2
 plugins:
   - mermaid2
 nav:
