@@ -32,4 +32,10 @@ The third bit indicates the AES algorithm chosen. Currently there are two modes 
 
 ## Unsecure Mask
 
+Besides the name, the unsecure mask is not unsecure, it simply serves other purposes, namely when the user wants to use sessions to reduce the protocols overhead. The LSB should be `0` to signal the use of a non-traditional mask+stamp+letter message. 
+
+The second bit signals the use of sessions. If the second bit is set to `1`, the server knows that the user intends to use a previous stored session, and the 8 bytes that follow the mask will be the `Session ID`. In this case, the server will use the stored AES Key, AES IV, and AES mode used in the connection that set the session. Note that, in this case, the AES context is always reset. 
+
+The third bit is used to request for the public key. In this case, the server should implement a method to provide the user with the public key. We let the developers to choose the method they want to do such thing.
+
 ![alt text](figs/unsecure_mask.svg)
