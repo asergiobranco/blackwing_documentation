@@ -56,3 +56,28 @@ Now you can simply create your blackwing server. To do so, use the following com
 
 Then you can add the `.yaml` files for each microservice, so that the server knows where to find the microservice whenever necessary. 
 
+## Session Manager
+
+The server will connect to the server manager using the IP Address and Port given in the server configuration file by the keywords: `session_manager_ip` and `session_manager_port`. By default it will try to connect to a memcached server running in the localhost and the standard port `11211`. However, one can use another type of database or caching system. Basically, the server makes a standard TCP connection and sends the following message:
+
+### Add a new sessionn
+
+```mermaid
+sequenceDiagram
+    participant Blackwing Server
+    participant Session Server
+    Blackwing Server->>Session Server: add $SESSION_ID_BASE64ENCODED 0 $EXPIRE_TIME $SIZE_OF_SESSION_BLOCK \r\n$SESSION_BLOCK_MSGPACKED\r\n
+    Session Server->>Blackwing Server: STORED\r\n
+```
+
+```
+# Message send to add a new session
+add $SESSION_ID_BASE64ENCODED 0 $EXPIRE_TIME $SIZE_OF_SESSION_BLOCK \r\n
+$SESSION_BLOCK_MSGPACKED\r\n
+```
+
+It expects to receive a 
+
+
+```
+```
