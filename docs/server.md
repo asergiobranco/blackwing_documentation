@@ -81,3 +81,13 @@ It expects to receive a
 
 ```
 ```
+
+### Fetch a session
+
+```mermaid
+sequenceDiagram
+    participant Blackwing Server
+    participant Session Server
+    Blackwing Server->>Session Server: get $SESSION_ID_BASE64ENCODED\r\n
+    Session Server->>Blackwing Server: VALUE 0 $SIZE\r\n$SESSION_BLOCK_MSGPACKED\r\nEND\r\n
+```
