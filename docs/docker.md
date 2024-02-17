@@ -13,6 +13,14 @@ this number is enough.
 
 `docker pull asergiobranco/blackwingserver`
 
+To run the server you must do the following:
+
+`docker run -v $(pwd):/home/bwserver/serverdir -p 5000:5000 asergiobranco/blackwingserver`
+
+In this case, if no `server.yaml` files is found in the current directory `$(pwd)`, then it will create a new one from scratch 
+using the default settings. You must then create `microservices` folder in the `$(pwd)` to add microservice files to route.
+
+
 ### Available tags
 
 There are currently four available tags:
@@ -23,4 +31,16 @@ There are currently four available tags:
 * asergiobranco/blackwingserver:bookworm
 
 The alpine and latest are the same.
+
+
+
+## Blackwing Microservice
+
+The blackwing microservice docker image allows one to easily run microservice using the framework originally developed 
+for blackwing. In this case, the routines must be written in python to work.
+
+The underlying framework licence is the **GNU GPLv3 licence**, which means that you must provide you microservices 
+routine code in open-source. 
+
+`docker pull asergiobranco/blackwingmicroservice`
 

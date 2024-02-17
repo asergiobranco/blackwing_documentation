@@ -27,4 +27,5 @@ nav:
   - Sessions: sessions.md
   - Server: server.md
   - Microservice: microservice.md
+  - Docker: docker.md
   - About: about.md
