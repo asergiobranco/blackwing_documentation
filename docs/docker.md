@@ -42,5 +42,42 @@ for blackwing. In this case, the routines must be written in python to work.
 The underlying framework licence is the **GNU GPLv3 licence**, which means that you must provide you microservices 
 routine code in open-source. 
 
-`docker pull asergiobranco/blackwingmicroservice`
+The docker container contains the directory `/home/bwmicroservice/msdir/`. This directory, ideally should contain four files to init the microservice routine: `config.yaml`, `main.py`, `requirements.txt`, `setup.sh`.
 
+The `config.yaml` file should be similar to the following example:
+
+```yaml
+hostname: 0.0.0.0
+backlog: 10
+port: 5000
+timeout: 10
+```
+
+The `hostname` and `port` tell the microservice if the traffic can be accepted or not.
+The `backlog` regard the maximum number of clients the microservice can handle at the same time.
+The `timeout` is the maximum amount of seconds the microservice will keep the socket open if no traffic passes over it. 
+
+The `main.py` should be something like this:
+
+```python
+
+from bwmicroservice import BlackwingHandler
+from bwmicroservice import BlackwingMicroservice
+
+# You can directly create the handler in this file
+# but usually is better to create your own library
+from mylibrary import MyHandler
+
+microservice = BlackwingMicroservice(configuration_path="/home/bwmicroservice/msdir/config.yaml", handler=MyHandler)
+microservice.start()
+```
+
+The `requirements.txt` should contain all the python packages and respective versions to be downloaded and installed by pip.
+
+The `setup.sh` file is run everytime before the microservice is started, it can be used to install the libraries or to make changes in the file system. This allows you to modify the container, without having to rebuild it.
+
+Another option for you, is to build your own container from the base image provided.
+
+## Run the container
+
+`docker run -d -p 5000:5000 $(PWD):/home/bwmicroservice/msdir/ asergiobranco/blackwingmicroservice`
