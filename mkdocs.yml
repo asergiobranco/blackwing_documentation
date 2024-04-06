@@ -28,5 +28,5 @@ nav:
   - Server: server.md
   - Microservice: microservice.md
   - Docker: docker.md
-  - Browser: browser.md
+  - Clients: client.md
   - About: about.md
