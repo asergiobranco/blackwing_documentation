@@ -50,6 +50,16 @@ client.close_ms(0xff)
 ### API
 
 `set_default_context(self, rsa_type, rsa_sha, aes_type, aes_segsize)`
+    > rsa_type : str
+    >   Should be a str either "OAEP" or "v1.5". 
+    >   You should use the OAEP by default, since is the safest.
+    > rsa_sha : str
+    >   Should be either "SHA1" or "SHA256".
+    > aes_type : str
+    >   Should be either "CFB" or "GCM"
+    > aes_segsize : int
+    >   Should be a multiple of 8. 
+    >   min value: 8 - max value: 128
 
 `set_microservice(self, microservice_id : int, request_session : bool)`
 
