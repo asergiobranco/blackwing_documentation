@@ -1,4 +1,4 @@
-# Python Client
+## Python Client
 
 The Blackwing Project provides simple python implementation for a Blackwing Client. The code is available at [https://github.com/asergiobranco/blackwing-client](https://github.com/asergiobranco/blackwing-client).
 
@@ -9,7 +9,7 @@ The client is capable of keeping contexts. Therefore, from message to message yo
 
 
 
-## Example
+### Example
 
 ```python
 from bwclient.client import BwClient
@@ -43,7 +43,7 @@ print(
 client.close_ms(0xff)
 ```
 
-## API
+### API
 
 `set_default_context(self, rsa_type, rsa_sha, aes_type, aes_segsize)`
 
@@ -59,7 +59,7 @@ client.close_ms(0xff)
 
 `request_for_new_session(self, microservice_id : int)`
 
-# Browser
+## Browser Client
 
 Because some microservices may be HTTP/Web applications, and no browser yet provides mechanisms to translate from HTTP into Blackwing, a browser is provided.
 With this browser you can develop and share your 
