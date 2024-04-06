@@ -46,15 +46,7 @@ The python module provide a more
 
 ## Docker 
 
-To install the docker simply run
-
-`docker load -i .zip`
-
-Now you can simply create your blackwing server. To do so, use the following command
-
-`docker run -d --restart always -p 5000:5000 -v `
-
-Then you can add the `.yaml` files for each microservice, so that the server knows where to find the microservice whenever necessary. 
+Please check the following link [https://blackwing.readthedocs.io/en/latest/docker/#blackwing_server](https://blackwing.readthedocs.io/en/latest/docker/#blackwing_server)
 
 ## Session Manager
 
