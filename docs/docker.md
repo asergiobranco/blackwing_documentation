@@ -20,6 +20,11 @@ To run the server you must do the following:
 In this case, if no `server.yaml` files is found in the current directory `$(pwd)`, then it will create a new one from scratch 
 using the default settings. You must then create `microservices` folder in the `$(pwd)` to add microservice files to route.
 
+### Configuration file
+
+If a configuration file `server.yaml` exists inside the volume, the server will start with those configurations. Otherwise, it will automatically generate a cofiguration file with default settings, and a random RSA key. 
+
+You can access the public key by reading the logs. The server, when started, will output the RSA public key inn different formats. 
 
 ### Available tags
 
@@ -32,7 +37,13 @@ There are currently four available tags:
 
 The alpine and latest are the same.
 
+### Getting the RSA public key
 
+You can access the public key by reading the logs. The server, when started, will output the RSA public key inn different formats.
+
+`docker log <CONTAINER_ID>`
+
+Another solution is to load the yaml file and use the pytho library to export the public key.
 
 ## Blackwing Microservice
 
