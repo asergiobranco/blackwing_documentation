@@ -65,12 +65,12 @@ client.close_ms(0xff)
 
 `set_microservice(self, microservice_id : int, request_session : bool)`
 
-> Creates a microservice context, that can be accessed through microservice_id
-> microservice_id : int or str
->   An integer or hexadecimal string that should be equal to the microserice_id in the server.
-> request_session : bool
->   Wheter or not to request a session in the first connection. 
->   If True, the client will request a new session in every new connection, if the server fails to provide a valid session in the previous requests.
+    Creates a microservice context, that can be accessed through microservice_id
+    > microservice_id : int or str
+       An integer or hexadecimal string that should be equal to the microserice_id in the server.
+    > request_session : bool
+       Wheter or not to request a session in the first connection. 
+       If True, the client will request a new session in every new connection, if the server fails to provide a valid session in the previous requests.
 
 `send_to_ms(self, microservice_id : int, msg : bytes)`
 
