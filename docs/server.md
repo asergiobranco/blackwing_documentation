@@ -38,7 +38,6 @@ yaml.safe_dump(key.export_key())
 
 ```
 
-### Using openssl
 
 ## Python Module
 

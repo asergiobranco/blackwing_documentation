@@ -51,6 +51,7 @@ client.close_ms(0xff)
 
 `set_default_context(self, rsa_type, rsa_sha, aes_type, aes_segsize)`
 
+    > Creates a default setting for any microservice. It basically tells which configurations to use for the stamp.
     > rsa_type : str
     >   Should be a str either "OAEP" or "v1.5". 
     >   You should use the OAEP by default, since is the safest.
@@ -63,6 +64,13 @@ client.close_ms(0xff)
     >   min value: 8 - max value: 128
 
 `set_microservice(self, microservice_id : int, request_session : bool)`
+
+> Creates a microservice context, that can be accessed through microservice_id
+> microservice_id : int or str
+>   An integer or hexadecimal string that should be equal to the microserice_id in the server.
+> request_session : bool
+>   Wheter or not to request a session in the first connection. 
+>   If True, the client will request a new session in every new connection, if the server fails to provide a valid session in the previous requests.
 
 `send_to_ms(self, microservice_id : int, msg : bytes)`
 
