@@ -128,3 +128,7 @@ Another option for you, is to build your own container from the base image provi
 ## Run the container
 
 `docker run -d -p 5000:5000 $(PWD):/home/bwmicroservice/msdir/ asergiobranco/blackwingmicroservice`
+
+## Example
+
+You can find an example for creating a microservice in [https://github.com/asergiobranco/blackwing-microservice-example](https://github.com/asergiobranco/blackwing-microservice-example).
